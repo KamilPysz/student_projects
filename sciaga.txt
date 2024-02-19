@@ -1,0 +1,14 @@
+/
+/home/uczen lub ~
+cd - przenosi do folderu
+cd ~ folder domowy
+ls pokazuje zawartosc
+touch - tworzy plik
+mcedit - edytuje plik
+nano - edytuje plik
+mkdir test - tworzy folder test
+rm test.txt - usuwanie pliku
+rm -r test - usuwa folder
+./program - uruchamia program
+chmod +x skrypt.sh - nadanie praw do wykonywania
+./skrypt.sh
