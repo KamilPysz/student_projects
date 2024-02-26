@@ -1,25 +1,44 @@
 #include <iostream>
-#include <cmath>
-#include <string>
+
+
 
 using namespace std;
 
-int main(){
-    cout<<"Liczby Pierwsze:"<<endl;
-    int l=1;
-    bool LiczbaP;
-    while(true){
-    LiczbaP = true;
-    for(int i=1; i<l;i++){
-    if(l%i==0){
-    LiczbaP = false;
+bool isPrime(int num){
+    if(num<2){
+	return false;
+}
+for (int i=2; i*i<=num; ++i){
+if(num % i==0){
+    return false;
     }
 }
-if(LiczbaP==true; && l!=1;){
-cout<<l<<endl;}
-l++;
+return true;
 }
 
+void wyswietl(int start, int end){
+    cout<<"Liczby pierwsze w zakresie:";
+    for (int i = start;i<= end; ++i){
+	if(isPrime(i)){
+	    cout<<i<<" ";
+}
+}
+cout<<endl;
+}
+
+
+
+
+
+int main(){
+
+    int start, end;
+	cout<<"Podaj poczatek zakresu";
+	cin>>start;
+
+	cout<<"Podaj koniec zakresu";
+	cin>>end;
+	wyswietl(start,end);
 
 
 
