@@ -17,13 +17,23 @@ using namespace std;
 //}
 
 int main(){
-	int tab1[4]={3,2,5,4};
-
+	//int tab1[4]={3,2,5,4};
 	vector<int> liczby;
-		liczby.push_back(3);
-		liczby.push_back(2);
-		liczby.push_back(5);
-		liczby.push_back(4);
+		int o=0;
+		cout<<"Podaj ile liczb";
+		cin>>o;
+	for(int k=0; k<=o-1;k++){
+		cout<<"podaj liczbe"<<endl;
+			int m=0;
+			cin>>m;
+			liczby.push_back(m);
+			}
+		
+//	vector<int> liczby;
+//		liczby.push_back(3);
+//		liczby.push_back(2);
+//		liczby.push_back(5);
+//		liczby.push_back(4);
 
 //	cout<<"Elementy Wektora";
 //	for(int i=0; i<liczby.size();++i){
