@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 
-	char tab[2][2]={{'~','~'},{'~','~'}};
+	char tab[3][3]={{'~','~','~'},{'~','~','~'},{'~','~','~'};
 	int row,col;
 	int strow,stcol;
 	cout<<"podaj pola w których ma być statek";
@@ -12,7 +12,7 @@ int main(){
 	cin>>stcol;
 	tab[strow][stcol] = 'S';
 	cout<<"podaj pole w które chcesz strzelic";
-	do{
+	
 		cout<<"Podaj wiersz (1-2)";
 		cin>>row;
 		cout<<"Podaj kolumne (1-2)";
@@ -22,7 +22,7 @@ int main(){
 		}	else{
 			cout<<"pudło";
 		}
-			}while(tab[row][col]!='S');
+		
 
 	return 0;
 }
